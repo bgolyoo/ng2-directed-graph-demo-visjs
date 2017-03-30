@@ -5,16 +5,24 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { VisModule } from 'ng2-vis';
+import { VisNetworkExampleComponent } from './network-example.component';
+import { VisNetworkExampleComponent2 } from './network-example2.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        VisNetworkExampleComponent,
+        VisNetworkExampleComponent2
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+        VisModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
